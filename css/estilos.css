@@ -1,0 +1,48 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.h1-logo{
+    align-items: center;
+}
+
+.img-copy{
+    width: 20px;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.card {
+    width:30%;
+    background: rgb(40,40,55);
+    background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+    box-shadow: 4px 6px 14px #00000036;
+    border-radius: 3px;
+    color: #F9F9F9;
+    padding: 16px;
+    transition: all .3s;
+   }
+   
+   .card:hover {
+    margin-top: -30px;
+   }
+
+   .card-item{
+    margin: 15px;
+   }
+
+   @media (max-width: 576px) {
+    
+.card{
+    width: 80%;
+}
+
+.card2{
+display: flex;
+justify-content: center;
+} 
+   }
