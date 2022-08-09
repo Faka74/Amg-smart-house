@@ -1,34 +1,39 @@
-*{
+* {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 
-nav{
-    background-color: #1E2022;
+body{
+    background-image: url(../assets/Fondo.png);
 }
 
-header{
+nav {
+    background-color: #111212;
+}
+
+footer{
+    background-color: #111212;
+
+}
+
+header {
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 10;
 }
 
-.background-color{
-    background-color: #1E2022;
+.background-color {
+    background-color: #151617;
 }
 
-section{
-    background-color: #1E2022;
-}
-
-.h1-logo{
+.h1-logo {
     align-items: center;
 }
 
-.img-copy{
+.img-copy {
     width: 20px;
     margin-left: 5px;
     height: 25px;
@@ -36,39 +41,56 @@ section{
 }
 
 .card {
-    width:30%;
-    background: rgb(40,40,55);
-    background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+    width: 30%;
+    background: rgb(40, 40, 55);
+    background: linear-gradient(344deg, rgba(40, 40, 55, 1) 0%, rgba(16, 16, 18, 1) 50%);
     box-shadow: 4px 6px 14px #00000036;
     border-radius: 3px;
     color: #F9F9F9;
     padding: 16px;
     transition: all .3s;
-   }
-   
-   .card:hover {
+}
+
+.card:hover {
     margin-top: -25px;
-   }
+}
 
-   .card-item{
+.card-item {
     margin: 15px;
-   }
-
-   @media (max-width: 576px) {
-    
-.card{
-    width: 80%;
 }
 
-.card2{
-display: flex;
-justify-content: center;
-} 
-
-.navbar-toggler-icon{
-    background-color: #36383a;
-    margin-top: 0px;
-    padding: 20px;
-    border-radius: 5px;
+.background-footer {
+    background-color: #1a1c1d;
 }
-   }
+
+@media (max-width: 576px) {
+
+    .card {
+        width: 80%;
+    }
+
+    .card:hover{
+        margin-top:0px;
+        transform: scale(1.05);
+    }
+
+    .card2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-toggler-icon {
+        margin-top: 0px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .nav-link{
+        text-align: center;
+    }
+
+    .navbar-toggler{
+        color: #111212;
+    }
+
+}
