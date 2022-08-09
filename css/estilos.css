@@ -9,6 +9,13 @@ nav{
     background-color: #1E2022;
 }
 
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
 .background-color{
     background-color: #1E2022;
 }
