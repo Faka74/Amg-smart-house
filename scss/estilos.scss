@@ -2,7 +2,11 @@ $color-fuente: #F9F9F9;
 $color-fondo1: #111212;
 $color-fondo2: #151617;
 $bg-footer: #1d1b1a;
+$hover-h1: #d4ae88;
+$padding: 16px;
 $fuente1: 'Quicksand', sans-serif;
+$vista: mobile;
+$vista-t:tablet;
 
 * {
     text-decoration: none;
@@ -18,7 +22,9 @@ body {
 }
 
 nav {
-    background-color: $color-fondo1;
+    @if ($color-fuente ==#F9F9F9) {
+        background-color: #121112;
+    }
 }
 
 footer {
@@ -45,21 +51,21 @@ section {
     }
 }
 
-h1{
+h1 {
     transition: all 0.2s;
     color: $color-fuente;
 }
 
-h1:hover{
-    color: #C4A98E;
+h1:hover {
+    color: $hover-h1;
 }
 
-.nav-link{
+.nav-link {
     transition: all 0.2s;
     color: $color-fuente;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transform: scale(1.10);
     color: $color-fuente;
 }
@@ -79,7 +85,9 @@ h1:hover{
     width: 25px;
 }
 
-
+.p-align {
+    text-align: center;
+}
 
 .card {
     width: 30%;
@@ -88,7 +96,7 @@ h1:hover{
     box-shadow: 14px 16px 14px #00000036;
     border-radius: 5px;
     color: $color-fuente;
-    padding: 16px;
+    padding: $padding / 4;
     transition: all .3s;
 }
 
@@ -113,70 +121,122 @@ h1:hover{
     background-color: $bg-footer;
 }
 
-@media (max-width: 576px) {
+body {
+    @if ($vista == mobile){
+        @media (max-width: 576px) {
 
-    .card {
-        width: 80%;
+            .card {
+                width: 80%;
+            }
+        
+            .card:hover {
+                margin-top: 0px;
+                transform: scale(1.05);
+            }
+        
+            .card2 {
+                display: flex;
+                justify-content: center;
+            }
+        
+            .navbar-toggler-icon {
+                background-image: url(../assets/icons8-menú-30.png);
+                margin-top: 0px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        
+            .nav-link {
+                text-align: center;
+            }
+        
+            .navbar-toggler {
+                margin-left: 10px;
+                margin-top: -2px;
+            }
+        
+            .p-align{
+                text-align: center;
+            }
+        
+        }
     }
 
-    .card:hover {
-        margin-top: 0px;
-        transform: scale(1.05);
-    }
+    @if ($vista-t == tablet){
+        @media (max-width: 992px) {
 
-    .card2 {
-        display: flex;
-        justify-content: center;
+            .card {
+                width: 80%;
+            }
+        
+            .card:hover {
+                margin-top: 0px;
+                transform: scale(1.05);
+            }
+        
+            .card2 {
+                display: flex;
+                justify-content: center;
+            }
+        
+            .navbar-toggler-icon {
+                background-image: url(../assets/icons8-menú-30.png);
+                margin-top: 0px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        
+            .nav-link {
+                text-align: center;
+            }
+        
+            .navbar-toggler {
+                margin-left: 10px;
+                margin-top: -2px;
+            }
+        
+            .p-align{
+                text-align: center;
+            }
+        
+        }
     }
-
-    .navbar-toggler-icon {
-        background-image: url(../assets/icons8-menú-30.png);
-        margin-top: 0px;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .nav-link {
-        text-align: center;
-    }
-
-    .navbar-toggler {
-        margin-left: 10px;
-        margin-top: -2px;
-    }
-
 }
 
-@media (max-width: 992px) {
 
-    .card {
-        width: 80%;
-    }
 
-    .card:hover {
-        margin-top: 0px;
-        transform: scale(1.05);
-    }
 
-    .card2 {
-        display: flex;
-        justify-content: center;
-    }
 
-    .navbar-toggler-icon {
-        background-image: url(../assets/icons8-menú-30.png);
-        margin-top: 0px;
-        padding: 10px;
-        border-radius: 5px;
-    }
 
-    .nav-link {
-        text-align: center;
-    }
 
-    .navbar-toggler {
-        margin-left: 10px;
-        margin-top: -2px;
-    }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

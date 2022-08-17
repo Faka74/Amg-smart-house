@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-  background-color: #111212;
+  background-color: #121112;
 }
 
 footer {
@@ -40,7 +40,7 @@ h1 {
 }
 
 h1:hover {
-  color: #C4A98E;
+  color: #d4ae88;
 }
 
 .nav-link {
@@ -68,6 +68,10 @@ h1:hover {
   width: 25px;
 }
 
+.p-align {
+  text-align: center;
+}
+
 .card {
   width: 30%;
   background: rgb(40, 40, 55);
@@ -75,7 +79,7 @@ h1:hover {
   box-shadow: 14px 16px 14px rgba(0, 0, 0, 0.2117647059);
   border-radius: 5px;
   color: #F9F9F9;
-  padding: 16px;
+  padding: 4px;
   transition: all 0.3s;
 }
 
@@ -101,55 +105,61 @@ h1:hover {
 }
 
 @media (max-width: 576px) {
-  .card {
+  body .card {
     width: 80%;
   }
-  .card:hover {
+  body .card:hover {
     margin-top: 0px;
     transform: scale(1.05);
   }
-  .card2 {
+  body .card2 {
     display: flex;
     justify-content: center;
   }
-  .navbar-toggler-icon {
+  body .navbar-toggler-icon {
     background-image: url(../assets/icons8-menú-30.png);
     margin-top: 0px;
     padding: 10px;
     border-radius: 5px;
   }
-  .nav-link {
+  body .nav-link {
     text-align: center;
   }
-  .navbar-toggler {
+  body .navbar-toggler {
     margin-left: 10px;
     margin-top: -2px;
+  }
+  body .p-align {
+    text-align: center;
   }
 }
 @media (max-width: 992px) {
-  .card {
+  body .card {
     width: 80%;
   }
-  .card:hover {
+  body .card:hover {
     margin-top: 0px;
     transform: scale(1.05);
   }
-  .card2 {
+  body .card2 {
     display: flex;
     justify-content: center;
   }
-  .navbar-toggler-icon {
+  body .navbar-toggler-icon {
     background-image: url(../assets/icons8-menú-30.png);
     margin-top: 0px;
     padding: 10px;
     border-radius: 5px;
   }
-  .nav-link {
+  body .nav-link {
     text-align: center;
   }
-  .navbar-toggler {
+  body .navbar-toggler {
     margin-left: 10px;
     margin-top: -2px;
+  }
+  body .p-align {
+    text-align: center;
   }
 }
 
