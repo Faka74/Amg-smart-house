@@ -1,8 +1,14 @@
+$color-fuente: #F9F9F9;
+$color-fondo1: #111212;
+$color-fondo2: #151617;
+$bg-footer: #1d1b1a;
+$fuente1: 'Quicksand', sans-serif;
+
 * {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $fuente1;
 }
 
 body {
@@ -12,12 +18,11 @@ body {
 }
 
 nav {
-    background-color: #111212;
+    background-color: $color-fondo1;
 }
 
 footer {
-    background-color: #111212;
-
+    background-color: $color-fondo1;
 }
 
 header {
@@ -27,21 +32,40 @@ header {
     z-index: 10;
 }
 
-// nesting 
+// nesting o anidacion
 
 section {
 
     div {
         padding: 20px;
 
-        h2{
-            color: #F9F9F9;
+        h2 {
+            color: $color-fuente;
         }
     }
 }
 
+h1{
+    transition: all 0.2s;
+    color: $color-fuente;
+}
+
+h1:hover{
+    color: #C4A98E;
+}
+
+.nav-link{
+    transition: all 0.2s;
+    color: $color-fuente;
+}
+
+.nav-link:hover{
+    transform: scale(1.10);
+    color: $color-fuente;
+}
+
 .background-color {
-    background-color: #151617;
+    background-color: $color-fondo2;
 }
 
 .h1-logo {
@@ -55,13 +79,15 @@ section {
     width: 25px;
 }
 
+
+
 .card {
     width: 30%;
     background: rgb(40, 40, 55);
     background: linear-gradient(344deg, rgba(40, 40, 55, 1) 0%, rgba(16, 16, 18, 1) 50%);
     box-shadow: 14px 16px 14px #00000036;
     border-radius: 5px;
-    color: #F9F9F9;
+    color: $color-fuente;
     padding: 16px;
     transition: all .3s;
 }
@@ -74,12 +100,8 @@ section {
     margin: 15px;
 }
 
-.h3-bg {
-    background-color: #1a1c1d;
-}
-
 .background-footer {
-    background-color: #1a1c1d;
+    background-color: $bg-footer;
 }
 
 .cardd {
@@ -88,7 +110,7 @@ section {
 }
 
 .h2-back {
-    background-color: #1a1c1d;
+    background-color: $bg-footer;
 }
 
 @media (max-width: 576px) {
