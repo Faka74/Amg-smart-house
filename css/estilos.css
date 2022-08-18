@@ -6,6 +6,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.card {
+  text-align: center;
+}
+
 body {
   background-image: url(../assets/Fondo.png);
   background-repeat: no-repeat;
