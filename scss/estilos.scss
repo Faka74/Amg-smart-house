@@ -4,15 +4,16 @@ $color-fondo2: #151617;
 $bg-footer: #1d1b1a;
 $hover-h1: #d4ae88;
 $padding: 16px;
+$heightins:600px;
 $fuente1: 'Quicksand', sans-serif;
 $vista: mobile;
 $vista-t: tablet;
 
-@mixin backgroundfoo(){
+@mixin backgroundfoo() {
     background-color: #111212;
 }
 
-$estilos:(
+$estilos: (
     centrado:center,
 );
 
@@ -23,7 +24,7 @@ $estilos:(
     font-family: $fuente1;
 }
 
-.card{
+.card {
     text-align: map-get($map: $estilos, $key: centrado);
     background-color: map-get($map: $estilos, $key: color);
 }
@@ -67,6 +68,10 @@ section {
 h1 {
     transition: all 0.2s;
     color: $color-fuente;
+}
+
+.img-instalacion{
+    height: $heightins;
 }
 
 // Through incluye el numero final

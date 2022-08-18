@@ -43,6 +43,10 @@ h1 {
   color: #F9F9F9;
 }
 
+.img-instalacion {
+  height: 600px;
+}
+
 h1:hover {
   color: #d4ae88;
 }
